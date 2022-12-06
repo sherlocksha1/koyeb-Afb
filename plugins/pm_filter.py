@@ -381,7 +381,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption,
+                    caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 👉https://t.me/+ipuYNipHQE03NmU1   https://t.me/+ipuYNipHQE03NmU1',
                     protect_content=True if ident == "filep" else False 
                 )
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
-            caption=f_caption,
+            caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 👉https://t.me/+ipuYNipHQE03NmU1   https://t.me/+ipuYNipHQE03NmU1',
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
