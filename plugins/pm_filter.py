@@ -384,7 +384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 👉https://t.me/+ipuYNipHQE03NmU1   https://t.me/+ipuYNipHQE03NmU1',
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('Check PM (DM), I have sent files in pm', show_alert=True)
         except UserIsBlocked:
             await query.answer('You Are Blocked to use me !', show_alert=True)
         except PeerIdInvalid:
