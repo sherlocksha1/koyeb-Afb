@@ -243,7 +243,7 @@ async def start(client, message):
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
-        caption=f'<b>Hai 👋 {mention}</b> 😍\n\n<code>{title}</code>\n\n𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 👉https://t.me/+ipuYNipHQE03NmU1   https://t.me/+ipuYNipHQE03NmU1',
+        caption=f'<code>{title}</code>\n\n𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 👉https://t.me/+ipuYNipHQE03NmU1   https://t.me/+ipuYNipHQE03NmU1',
         protect_content=True if pre == 'filep' else False,
         )
                     
